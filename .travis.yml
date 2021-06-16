@@ -4,7 +4,7 @@
 os: linux
 dist: xenial
 language: csharp
-solution: PipelineLib.sln
+solution: CarTestRepo.sln
 mono: none
 dotnet: 5.0.301
  
