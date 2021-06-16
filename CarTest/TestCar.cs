@@ -32,8 +32,6 @@ namespace CarTest
             yield return new object[] { " ", "black", true };
         }
 
-
-
         [Theory]
         [MemberData(nameof(Car_Failing))]
         public void Constructor_Failing(string Brand, string Color, bool IsBrand)
@@ -52,5 +50,28 @@ namespace CarTest
             }
         }
 
+        public static IEnumerable<object[]> Colors()
+        {
+            yield return new object[] { "red", true };
+            yield return new object[] {"black", false };
+        }
+
+
+        [Theory]
+        [MemberData(nameof(Colors))]
+        public void GetMaxSpeed_Passing(string color, bool betterHighSpeed)
+        {
+            Car car = new Car(brand, model, color);
+            car.GetMaxSpeed();
+
+            if(betterHighSpeed)
+            {
+                Assert.Equal(250, car.MaxSpeed);
+            }
+            else
+            {
+                Assert.Equal(150, car.MaxSpeed);
+            }
+        }
     }
 }

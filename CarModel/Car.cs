@@ -30,7 +30,6 @@ namespace CarModel
                 this.color = value;
             }
         }
-
         public Car(string brand, string modelname, string color)
         {
             this.Brand = brand;
@@ -38,11 +37,6 @@ namespace CarModel
             this.Color = color;
             this.MaxSpeed = 0;
         }
-
-
-
-
-
         public void GetMaxSpeed()
         {
             if (this.Color == "red")
@@ -54,6 +48,5 @@ namespace CarModel
                 this.MaxSpeed = 150;
             }
         }
-
     }
 }
