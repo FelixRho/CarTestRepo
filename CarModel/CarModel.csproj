@@ -2,6 +2,31 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>RhF</RootNamespace>
+    <AssemblyName>RhF.CatTestRepo.$(MSBuildProjectName)</AssemblyName>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+
+    <Title>$(MSBuildProjectName)</Title>
+    <Authors>FelixRho</Authors>
+    <Company>FelixRhoCompany</Company>
+    <Copyright>(c) 2021 FelixRho</Copyright>
+
+    <PackageProjectUrl>https://github.com/FelixRho/CarTestRepo</PackageProjectUrl>
+    <PackageTags>person, model</PackageTags>
+    <Version>1.0.0</Version>
+    <Description>Model for car</Description>
+
+    <PackageId>RhF.CarTestRepo.CarModel</PackageId>
+
+    <RepositoryUrl>https://github.com/FelixRho/CarTestRepo.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    
   </PropertyGroup>
 
 </Project>
