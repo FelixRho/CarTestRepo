@@ -16,7 +16,7 @@ namespace CarModel
             this.Color = color;
         }
 
-        public int GetMaxSpeed()
+        public void GetMaxSpeed()
         {
             if(this.Color == "red")
             {
